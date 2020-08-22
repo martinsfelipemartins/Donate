@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".sendmessage.ui.SendMessageFragment">
+
+    <LinearLayout
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/mandiocalol"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editText_message"
+            android:layout_width="match_parent"
+            android:layout_marginTop="24dp"
+            android:background="#fff"
+            android:hint="Escreva sua mensagem aqui..."
+            android:textAlignment="center"
+            android:layout_height="200dp" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:text="ESCUTAR"
+            android:id="@+id/btnOuvirMsg"/>
+
+        <Button
+            android:id="@+id/btnchamartela"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:text="Opéncamera" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
